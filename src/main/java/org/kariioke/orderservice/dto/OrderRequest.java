@@ -2,7 +2,9 @@ package org.kariioke.orderservice.dto;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
+import lombok.Data;
 
+@Data
 public class OrderRequest {
     @NotNull(message = "Inventory item ID is required")
     private Long inventoryItemId;
